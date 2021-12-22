@@ -53,12 +53,12 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a id="nav-link" class="nav-link" href="#">
+                                <a id="nav-link" class="nav-link" href="/">
                                     Inicio
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a id="nav-link" class="nav-link" href="#">
+                                <a id="nav-link" class="nav-link" href="{{ url('/shop') }}">
                                     Productos
                                 </a>
                             </li>
@@ -68,8 +68,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a id="nav-link" class="nav-link" href="#">
-                                    Contacto
+                                <a id="nav-link" class="nav-link" href="{{ url('/cart') }}">
+                                    Carrito
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
