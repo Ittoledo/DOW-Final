@@ -17,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/*Route::group(['middleware' => ['web']], function () {
+	Route::get('/', '\Aimeos\Shop\Controller\CatalogController@homeAction')->name('aimeos_home');
+});*/
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
