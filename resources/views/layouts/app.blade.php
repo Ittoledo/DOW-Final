@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a id="nav-link" class="nav-link" href="#">
+                                <a id="nav-link" class="nav-link" href="{{ url('/nosotros') }}">
                                     Nosotros
                                 </a>
                             </li>
