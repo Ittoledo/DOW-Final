@@ -96,7 +96,14 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="background-image: url('{{ URL::to('/images/fondo2.jpg') }}');
+        height: 100vh
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;">
+        
             @yield('content')
         </main>
     </div>
