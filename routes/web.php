@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\LiveWire\Cart\IndexComponent;
 use App\Http\LiveWire\ShopComponent;
 use App\Http\LiveWire\CartComponent;
 use App\Http\LiveWire\CheckoutComponent;
@@ -23,7 +24,7 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/nosotros', [App\Http\Controllers\NosotrosController::class, 'about']);
 Route::get('/shop', ShopComponent::class);
-Route::get('/cart', CartComponent::class);
+Route::get('/cart', IndexComponent::class)->name('cart');
 Route::get('/checkout', CheckoutComponent::class);
 Auth::routes();
 
