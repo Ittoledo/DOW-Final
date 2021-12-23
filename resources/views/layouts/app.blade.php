@@ -70,8 +70,9 @@
                             </li>
                             <li class="nav-item">
                                 <a id="nav-link" class="nav-link" href="{{ url('/cart') }}">
-                                    Carrito
-                                </a>
+                                    <!-- Carrito ({{\Cart::session(auth()->id())->getContent()->count()}}) -->
+                                    @livewire('cart-component')
+                                </a> 
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

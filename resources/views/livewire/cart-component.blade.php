@@ -1,3 +1,3 @@
 <div>
-    Carrito
+    Carrito ({{\Cart::session(auth()->id())->getTotalQuantity()}})
 </div>

@@ -1,4 +1,3 @@
-@section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -21,8 +20,7 @@
                                     <p class="card-text">{{$producto->descripcion}}</p>
                                 </div>
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-primary"
-                                    wire:click="add({{$producto->id}})">
+                                    <button type="button" class="btn btn-primary" wire:click="add({{$producto->id}})">
                                     Agregar al Carrito</button>
                                 </div>
                             </div>
@@ -35,4 +33,3 @@
         </div>
     </div>
 </div>
-@endsection
