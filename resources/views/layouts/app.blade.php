@@ -70,7 +70,7 @@
                             </li>
                             <li class="nav-item">
                                 <a id="nav-link" class="nav-link" href="{{ url('/cart') }}">
-                                    Carrito {{\Cart::session(auth()->id())->get_content()->count()}}
+                                    Carrito
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
