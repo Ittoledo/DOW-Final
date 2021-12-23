@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @livewireStyles
 </head>
 <body>
     <div id="app">
@@ -69,7 +70,7 @@
                             </li>
                             <li class="nav-item">
                                 <a id="nav-link" class="nav-link" href="{{ url('/cart') }}">
-                                    Carrito
+                                    Carrito {{\Cart::session(auth()->id())->get_content()->count()}}
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
@@ -99,5 +100,6 @@
             @yield('content')
         </main>
     </div>
+    @livewireScripts
 </body>
 </html>
